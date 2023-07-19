@@ -130,7 +130,6 @@ body {
   line-height: 2.2rem;
 }
 
-
 .rating-section {
   display: flex;
   flex-direction: column;
@@ -256,11 +255,13 @@ body {
     width: 85%;
   }
 
-  .rating-section:nth-child(2) {
-    border: unset;
+  .rating-card:nth-child(2) {
+    align-self: center;
   }
 
-
+  .rating-card:nth-child(3) {
+    align-self: flex-end;
+  }
 
   .testimonials-section {
     flex-direction: row;
