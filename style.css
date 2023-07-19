@@ -103,6 +103,7 @@ body {
 
 .container {
   width: 310px;
+  max-width: 1000px;
   margin: 70px 0;
 }
 
@@ -128,6 +129,7 @@ body {
   color: var(--dark-grayish-magenta);
   margin: 20px 0;
   line-height: 2.2rem;
+  font-weight: 700;
 }
 
 .rating-section {
@@ -138,7 +140,6 @@ body {
 }
 
 .rating-card {
-  border: 1px solid black;
   border-radius: 7px;
   background-color: var(--light-grayish-magenta);
   width: 100%;
@@ -188,11 +189,13 @@ body {
   flex-direction: column;
   padding-left: 20px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .card-person span {
   display: block;
   color: var(--soft-pink);
+  font-weight: 400;
 }
 
 .testimonials-section {
@@ -206,23 +209,16 @@ body {
   margin: 5% 10%
 }
 
-.title {
-  border: 1px solid black;
-}
-.rating-section {
-  border: 1px solid black;
-}
-.testimonials-section {
-  border: 1px solid black;
-}
 
 @media (min-width: 900px) {
 
+body {
+  justify-content: center;
+}
 
 .container {
     display: flex;
-    border: 1px solid black;
-    width: 85vw;
+    width: 90vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -234,11 +230,14 @@ body {
   }
   .title h1 {
     text-align: left;
+    max-width: 335px;
   }
 
   .title p {
     text-align: left;
-  }
+    font-size: 1.2rem; 
+    max-width: 85%;                                                                                 ;
+  }                                           
 
   .rating-section {
     width: 60%;
@@ -265,5 +264,27 @@ body {
 
   .testimonials-section {
     flex-direction: row;
+    width: 100%;
+    height: 210px;
+    justify-content: space-between;
   }
+
+  .testimonials-card {
+    font-size: 1.1rem;
+    width: 270px;
+    height:80%;
+  }
+
+  .testimonials-card:nth-child(2) {
+    align-self: center;
+  }
+
+  .testimonials-card:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .card-person > img {
+    width: 30px;
+  }
+
 }
